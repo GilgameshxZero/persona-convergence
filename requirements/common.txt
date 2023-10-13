@@ -15,15 +15,15 @@ jedi
 
 # Jupyter.
 tqdm
-ipykernel==5.5.6  # colab.
+ipykernel # ==5.5.6  # colab.
 ipywidgets
 jupyterlab
-jupyter-client<8  # colab.
-pyzmq<25  # colab.
+jupyter-client  # <8  # colab.
+pyzmq  # <25  # colab.
 
 # Scientific computing.
 numpy
-pandas==1.5.3  # colab.
+pandas  # ==1.5.3  # colab.
 matplotlib
 scikit-learn
 scipy
