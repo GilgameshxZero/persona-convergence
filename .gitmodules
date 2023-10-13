@@ -1,3 +1,3 @@
 [submodule "models/gpt2"]
 	path = models/gpt2
-	url = git@hf.co:gpt2
+	url = https://git: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@hf.co/gpt2.git/
