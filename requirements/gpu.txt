@@ -12,7 +12,7 @@ pynvml
 --extra-index-url https://download.pytorch.org/whl/cu115
 --extra-index-url https://download.pytorch.org/whl/cu114
 --extra-index-url https://download.pytorch.org/whl/cu113
-torch==2.0.0
+torch==2.0.1
 torchvision
 torchaudio
 
