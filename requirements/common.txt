@@ -1,0 +1,44 @@
+# For Python 3.9.*.
+# Packages dependent on `jaxlib` are not available on Windows.
+-r pre.txt
+
+# General.
+six
+dill
+requests
+
+# Style.
+pylint
+autopep8
+yapf
+jedi
+
+# Jupyter.
+tqdm
+ipykernel
+ipywidgets
+jupyterlab
+
+# Scientific computing.
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+
+# ML utility.
+cox
+ml-collections
+# Dependency on jaxlib which has no Windows wheels as of yet.
+clu; platform_system!="Windows"
+
+# Tensorflow. Check platform/version/Python support before updating pin.
+tensorflow==2.10.0
+tensorflow-datasets
+tensorflow-probability
+
+# Misc.
+flax
+neural-tangents
+adversarial-robustness-toolbox
+-e .

@@ -1,0 +1,21 @@
+# Requires at least CUDA 11.1.1, cuDNN 8.1.0, and if using WSL 2, either Windows 11 or latest Windows 10. Supports compute capability up to 8.6 (tested on 5.0 (GTX 960M)).
+# Consider running with --no-cache-dir on memory-constrained systems until pip implements constant-size cache loading. 16GB should barely cut it (with WSL 2 memory adjustment for default 8GB limit).
+
+-r common.txt
+
+pynvml
+
+# Pytorch.
+--extra-index-url https://download.pytorch.org/whl/cu118
+--extra-index-url https://download.pytorch.org/whl/cu117
+--extra-index-url https://download.pytorch.org/whl/cu116
+--extra-index-url https://download.pytorch.org/whl/cu115
+--extra-index-url https://download.pytorch.org/whl/cu114
+--extra-index-url https://download.pytorch.org/whl/cu113
+torch==2.0.0
+torchvision
+torchaudio
+
+# Jax.
+-f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+jax[cuda]; platform_system!="Windows"

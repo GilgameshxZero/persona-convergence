@@ -1,0 +1,13 @@
+# Python.
+**/.ipynb_checkpoints/
+**/__pycache__/
+**/*.egg-info/
+
+# Repo.
+**/.venv/
+
+# Symbolic links to WSL 2 virtualenvs are not directories, and shouldn’t be postfixed with `/`.
+**/.venv
+
+# General.
+**/.DS_Store
