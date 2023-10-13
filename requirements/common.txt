@@ -1,4 +1,4 @@
-# For Python 3.9.*.
+# For Python 3.9.* and Python 3.10.*.
 # Packages dependent on `jaxlib` are not available on Windows.
 -r pre.txt
 
