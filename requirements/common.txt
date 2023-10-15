@@ -35,7 +35,7 @@ ml-collections
 clu; platform_system!="Windows"
 
 # Tensorflow. Check platform/version/Python support before updating pin.
-tensorflow==2.10.0
+tensorflow==2.11.1
 tensorflow-datasets
 tensorflow-probability
 
