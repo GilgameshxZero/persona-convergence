@@ -43,4 +43,5 @@ tensorflow-probability
 flax
 neural-tangents
 adversarial-robustness-toolbox
+transformers
 -e .
