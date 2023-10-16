@@ -15,33 +15,33 @@ jedi
 
 # Jupyter.
 tqdm
-ipykernel # ==5.5.6  # colab.
+ipykernel
 ipywidgets
 jupyterlab
-jupyter-client  # <8  # colab.
-pyzmq  # <25  # colab.
+jupyter-client
+pyzmq
 
 # Scientific computing.
 numpy
-pandas  # ==1.5.3  # colab.
+pandas
 matplotlib
 scikit-learn
 scipy
 
 # ML utility.
-cox
-ml-collections
+# cox
+# ml-collections
 # Dependency on jaxlib which has no Windows wheels as of yet.
 clu; platform_system!="Windows"
 
 # Tensorflow. Check platform/version/Python support before updating pin.
-tensorflow==2.14.0
-tensorflow-datasets
-tensorflow-probability
+# tensorflow==2.14.0
+# tensorflow-datasets
+# tensorflow-probability
 
 # Misc.
 flax
-neural-tangents
-adversarial-robustness-toolbox
+# neural-tangents
+# adversarial-robustness-toolbox
 transformers
 -e .
