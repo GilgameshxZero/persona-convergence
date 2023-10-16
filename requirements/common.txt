@@ -32,7 +32,7 @@ scipy
 # cox
 # ml-collections
 # Dependency on jaxlib which has no Windows wheels as of yet.
-clu; platform_system!="Windows"
+# clu; platform_system!="Windows"
 
 # Tensorflow. Check platform/version/Python support before updating pin.
 # tensorflow==2.14.0
@@ -40,7 +40,7 @@ clu; platform_system!="Windows"
 # tensorflow-probability
 
 # Misc.
-flax
+# flax
 # neural-tangents
 # adversarial-robustness-toolbox
 transformers
