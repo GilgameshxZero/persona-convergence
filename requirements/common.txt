@@ -40,8 +40,9 @@ scipy
 # tensorflow-probability
 
 # Huggingface.
-transformers
+transformers[torch]
 datasets
+evaluate
 
 # Misc.
 # flax
