@@ -39,9 +39,12 @@ scipy
 # tensorflow-datasets
 # tensorflow-probability
 
+# Huggingface.
+transformers
+datasets
+
 # Misc.
 # flax
 # neural-tangents
 # adversarial-robustness-toolbox
-transformers
 -e .
