@@ -6,8 +6,13 @@
 six
 dill
 requests
+simple-parsing==0.1.4
+pytest
+wandb
 
 # Style.
+black
+isort
 pylint
 autopep8
 yapf
@@ -16,15 +21,17 @@ jedi
 # Jupyter.
 tqdm
 ipykernel
-ipywidgets
+ipywidgets==7.7.3 # https://github.com/microsoft/vscode-jupyter/issues/11014
 jupyterlab
 jupyter-client
 pyzmq
 
 # Scientific computing.
+einops
 numpy
 pandas
 matplotlib
+seaborn
 scikit-learn
 scipy
 
@@ -48,4 +55,6 @@ evaluate
 # flax
 # neural-tangents
 # adversarial-robustness-toolbox
+magic-wormhole
+gpustat
 -e .

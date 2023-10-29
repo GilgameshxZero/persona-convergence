@@ -13,3 +13,10 @@ pip install --upgrade -r requirements/gpu.txt
 git submodule init
 git submodule update
 ```
+
+### Tony's config setup
+```bash
+micromamba create -n persona python=3.10
+microma activate persona
+pip install -r requirements/gpu.txt
+```
