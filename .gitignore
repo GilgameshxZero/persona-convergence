@@ -5,6 +5,7 @@
 
 # Repo.
 **/.venv/
+models/**
 
 # Symbolic links to WSL 2 virtualenvs are not directories, and shouldn’t be postfixed with `/`.
 **/.venv

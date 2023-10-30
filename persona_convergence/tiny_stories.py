@@ -34,6 +34,14 @@ def load_ds(
         .rename_column("input_ids", "orig_input_ids")
     )
 
+    ds = ds.filter(
+        lambda batch_input_ids: [len(x) == seq_len for x in batch_input_ids],
+        input_columns="orig_input_ids",
+        batched=True,
+        batch_size=batch_size,
+        num_proc=num_proc,
+    )
+
     ds = (
         ds.map(
             lambda batch_texts: tokenizer(
@@ -48,14 +56,6 @@ def load_ds(
         )
         .remove_columns(["attention_mask"])
         .rename_column("input_ids", "first_token_w_space")
-    )
-
-    ds = ds.filter(
-        lambda batch_input_ids: [len(x) == seq_len for x in batch_input_ids],
-        input_columns="orig_input_ids",
-        batched=True,
-        batch_size=batch_size,
-        num_proc=num_proc,
     )
 
     return ds

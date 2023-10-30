@@ -1,11 +1,23 @@
+import pathlib
 import textwrap
 
+import git
 import torch
 from transformers import (
     AutoModelForCausalLM,
     GenerationConfig,
     PreTrainedTokenizer,
 )
+
+
+def get_repo_root() -> pathlib.Path:
+    """Returns repo root (relative to this file)."""
+    return pathlib.Path(
+        git.Repo(
+            __file__,
+            search_parent_directories=True,
+        ).git.rev_parse("--show-toplevel")
+    )
 
 
 def print_with_wrap(text, width=80):
